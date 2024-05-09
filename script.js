@@ -37,7 +37,11 @@ function operate(operator, firstNum, secondNum) {
   } else if (operator === "*") {
     return multiply(firstNum, secondNum);
   } else if (operator === "/") {
-    divide(firstNum, secondNum);
+    if (secondNum !== 0) {
+      return divide(firstNum, secondNum);
+    } else {
+      return "Cannot divide by zero";
+    }
   } else return "Invalid operator";
 }
 console.log(operate("+", 12, 13));
