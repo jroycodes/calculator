@@ -26,3 +26,12 @@ numberButtons.forEach((button) => {
 function updateDisplay(value) {
   document.querySelector(".screen").textContent = value;
 }
+
+function operatorButtonClick(event) {
+  currentOperator = event.target.textContent;
+}
+
+// Add event listeners to operator buttons
+document.querySelectorAll(".operators").forEach((button) => {
+  button.addEventListener("click", operatorButtonClick);
+});
