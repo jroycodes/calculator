@@ -64,3 +64,7 @@ function operate() {
 
   updateDisplay(result);
 }
+
+// Add event listener to equals button
+document.getElementById("equals").addEventListener("click", operate);
+
