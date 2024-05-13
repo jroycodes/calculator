@@ -21,3 +21,8 @@ const numberButtons = document.querySelectorAll(".numbers");
 numberButtons.forEach((button) => {
   button.addEventListener("click", buttonClick);
 });
+
+// display values 
+function updateDisplay(value) {
+  document.querySelector(".screen").textContent = value;
+}
