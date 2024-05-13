@@ -68,3 +68,12 @@ function operate() {
 // Add event listener to equals button
 document.getElementById("equals").addEventListener("click", operate);
 
+function clearCalculator() {
+  firstNum = "";
+  secondNum = "";
+  currentOperator = "";
+  updateDisplay("0");
+}
+
+// Add event listener to clear button
+document.getElementById("clear").addEventListener("click", clearCalculator);
